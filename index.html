@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexGen Tech | Premium Laptops & Audio Gadgets</title>
+    <meta name="description" content="Shop the latest high-performance electronics at NexGen Tech.">
+    <meta name="keywords" content="E-commerce, Electronics, Pune Tech Store, Laptops">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            
+            <div class="nav-left">
+                <a href="#" class="logo">NexGen <span>Tech</span></a>
+                <div class="nav-locator">
+                    <span class="line-1">Delivering to Pune</span>
+                    <span class="line-2">Update location</span>
+                </div>
+            </div>
+
+            <div class="nav-fill">
+                <div class="search-box">
+                    <div class="search-category">All</div>
+                    <input type="text" id="searchInput" placeholder="Search NexGen Tech" onkeyup="filterProducts()">
+                    <button class="search-submit">🔍</button>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                
+                <div class="header-email-box">
+                    <span class="line-1">Sign In</span>
+                    <form class="nav-email-form" id="navNewsletter">
+                        <input type="email" placeholder="Email " required>
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
+
+                <div class="account-block">
+                    <span class="line-1">Hello, sign in</span>
+                    <span class="line-2">Account & Lists</span>
+                </div>
+
+                <div class="cart-icon" onclick="toggleCart()">
+                    <span id="cartCount" class="cart-count">0</span>
+                    🛒 <strong>Cart</strong>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Upgrade Your Lifestyle</h1>
+            <p>Explore the latest in high-performance electronics.</p>
+            <button class="btn">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="category-container">
+            <div class="cat-card">Laptops</div>
+            <div class="cat-card">Audio</div>
+            <div class="cat-card">Cameras</div>
+            <div class="cat-card">Wearables</div>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2 class="section-title">Featured Products</h2>
+        <div id="productGrid" class="product-grid">
+            </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 NexGen Tech. All rights reserved. | Lab Assignment 4</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="cartDrawer" class="cart-drawer">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button onclick="toggleCart()" class="close-cart">&times;</button>
+    </div>
+    <div id="cartItems" class="cart-items-list">
+        </div>
+    <div class="cart-footer">
+        <h3>Total: $<span id="cartTotal">0.00</span></h3>
+        <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+    </div>
+
+</body>
+</html>
